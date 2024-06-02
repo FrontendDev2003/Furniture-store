@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #fff;
+    color: #222;
+    font-weight: 400;
+}
+
+.wrapper{
+    width: 1280px;
+    margin: 50px auto;
+}
+
+header {
+    position: relative;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+header ul.nav {
+    list-style: none;
+    text-align: right;
+}
+
+header ul.nav li {
+    display: inline;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+
+header ul.nav li:hover {
+    opacity: 0.6;
+}
+
+header .shop-cart-btn {
+    cursor: pointer;
+    transition: color, transform 300ms;
+}
+
+header .shop-cart-btn:hover, 
+header .shop-cart-btn.active {
+    color: #db0004;
+    transform: scale(1.2);
+}
+
+header .shop-cart {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 400px;
+    background-color: #dedede;
+    box-shadow: 8px 12px 38px -2px rgba(112,112,112,0.87);
+    z-index: 228;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+header .shop-cart .item img {
+    width: 80px;
+    float: left;
+    margin-right: 15px;
+}
+
+header .shop-cart .item{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+header .shop-cart .empty{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+header .shop-cart .item h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+header .shop-cart .item b {
+    font-weight: 700;
+}
+
+header .shop-cart .item .remove-icon {
+    position: relative;
+    top: 4px;
+    left: 5px;
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+
+header .shop-cart .item .remove-icon:hover {
+    color: #db0004;
+    transform: scale(1.2);
+}
+
+header .shop-cart .sum {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+header .show {
+    margin: 50px 0;
+    background: url('/src/img/show.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bababa;
+    position: relative;
+}
+
+header .show::after{
+    content: 'Best furniture for your house';
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    width: 300px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 40px;
+}    
+    
+header .show::before {
+    content: 'at reasonable prices';
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    width: 300px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 25px;
+}
+
+.categories div {
+    display: inline-block;
+    background-color: #bababa;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 300ms ease;
+}
+
+.categories div:hover {
+    border-color: #ff8c00;
+}
+
+.full-item {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000000ad;
+    z-index: 1000;
+    overflow: auto;
+}
+
+
+.full-item img {
+    width: 500px;
+}
+
+.full-item .add-to-cart {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.full-item > div {
+    width: 500px;
+    position: relative;
+    margin: 5% auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .item {
+    width: 30%;
+    margin-bottom: 50px;
+    background-color: #e1e3e1;
+    border-radius: 20px 20px 0 0;
+    transition: transform 300ms;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+main .item img,
+.full-item .item img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+}
+
+main .item:hover,
+.full-item .item:hover {
+    transform: scale(1.01);
+}
+
+main h2, main p, main b,
+.full-item h2, .full-item p, .full-item b {
+    margin: 10px 15px;
+    color: #323;
+}
+
+main b,
+.full-item b {
+    color: #02c232;
+}
+
+main .add-to-cart,
+.full-item .add-to-cart {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #ff8c00;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    transition: transform 300ms;
+}
+
+main .add-to-cart:hover,
+.full-item .add-to-cart:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
