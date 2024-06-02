@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Furniture-store/static/css/main.303add68.css",
+    "main.js": "/Furniture-store/static/js/main.18638e92.js",
+    "static/media/show.jpg": "/Furniture-store/static/media/show.2c024acf9c378b11292a.jpg",
+    "index.html": "/Furniture-store/index.html",
+    "main.303add68.css.map": "/Furniture-store/static/css/main.303add68.css.map",
+    "main.18638e92.js.map": "/Furniture-store/static/js/main.18638e92.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.303add68.css",
+    "static/js/main.18638e92.js"
+  ]
+}
